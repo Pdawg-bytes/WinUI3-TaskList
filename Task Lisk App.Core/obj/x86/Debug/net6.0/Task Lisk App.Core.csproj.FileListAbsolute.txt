@@ -1,0 +1,12 @@
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\bin\x86\Debug\net6.0\Task Lisk App.Core.deps.json
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\bin\x86\Debug\net6.0\Task Lisk App.Core.dll
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\bin\x86\Debug\net6.0\Task Lisk App.Core.pdb
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.csproj.AssemblyReference.cache
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.AssemblyInfoInputs.cache
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.AssemblyInfo.cs
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.csproj.CoreCompileInputs.cache
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.dll
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\refint\Task Lisk App.Core.dll
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\Task Lisk App.Core.pdb
+C:\Users\pgago\source\repos\Task Lisk App\Task Lisk App.Core\obj\x86\Debug\net6.0\ref\Task Lisk App.Core.dll
