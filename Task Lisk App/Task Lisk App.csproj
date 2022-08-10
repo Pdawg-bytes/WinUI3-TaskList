@@ -16,7 +16,7 @@
     <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Views\ContentDialogContent.xaml" />
+    <None Remove="Views\CreateTaskDialog.xaml" />
     <None Remove="Views\TasksPageDialog.xaml" />
   </ItemGroup>
 
@@ -41,7 +41,7 @@
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <Page Update="Views\ContentDialogContent.xaml">
+    <Page Update="Views\CreateTaskDialog.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Views\TasksPageDialog.xaml">

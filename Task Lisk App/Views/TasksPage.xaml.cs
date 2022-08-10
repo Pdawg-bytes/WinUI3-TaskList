@@ -1,7 +1,7 @@
-﻿using AppUIBasics.ControlPages;
-using Microsoft.UI.Dispatching;
+﻿using Microsoft.UI.Dispatching;
 using Microsoft.UI.Xaml;
 using System;
+using System.Diagnostics;
 using Microsoft.UI.Xaml.Controls;
 using Task_Lisk_App.ViewModels;
 
@@ -31,16 +31,9 @@ public sealed partial class TasksPage : Page
     private async void AddTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
         // Sets content dialog
-        ContentDialog dialog = new ContentDialog();
-
-        // Defines properties
+        ContentDialog dialog = new CreateTaskDialog();
+        dialog.CloseButtonStyle = (Style)Application.Current.Resources["ButtonStyle1"];
         dialog.XamlRoot = this.XamlRoot;
-        dialog.Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style;
-        dialog.Title = "Create a task";
-        dialog.PrimaryButtonText = "Add";
-        dialog.CloseButtonText = "Cancel";
-        dialog.DefaultButton = ContentDialogButton.Primary;
-        dialog.Content = new ContentDialogContent();
 
         // Stores result for use in statement
         var result = await dialog.ShowAsync();
@@ -49,6 +42,8 @@ public sealed partial class TasksPage : Page
         if (result == ContentDialogResult.Primary)
         {
             SuccessBar.IsOpen = true;
+            string poctext = (string)dialog.Tag;
+            pocText.Text = poctext;
             CancelBar.IsOpen = false;
             // Waits 3 seconds then hides bar again
             await Task.Delay(TimeSpan.FromSeconds(3));

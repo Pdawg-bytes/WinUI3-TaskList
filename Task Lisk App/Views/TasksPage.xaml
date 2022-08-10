@@ -19,6 +19,7 @@
     Title="Task cancelled"
     Message="The task was not created because it was cancelled." />
             <InfoBar IsOpen="false" x:Name="SuccessBar" Severity="Success" Title="Success" Message="Task successfully created."/>
+            <TextBlock x:Name="pocText" Margin="20,14,0,0"/>
         </StackPanel>
     </Grid>
 </Page>

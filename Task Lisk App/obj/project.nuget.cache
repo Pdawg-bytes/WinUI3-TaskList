@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6+XtPm4loo8P2su7Ad3TegS+5Nyu25HLhnJ8BM1OWDNojCimWXdX+CiandOCvDYVuykqrELB7VTOX9kUaMIOfg==",
+  "dgSpecHash": "PInwTNzIRgdOmEsOJnR8+VPoYA/yqJKB5mPFQOZYbgemPMUjQN71lJn36ddBk6PtuytEizjsv9z7A9rZuq0JPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pgago\\source\\repos\\Task Lisk App\\Task Lisk App\\Task Lisk App.csproj",
+  "projectFilePath": "C:\\Users\\pgago\\source\\repos\\Task List App\\Task Lisk App\\Task Lisk App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pgago\\.nuget\\packages\\communitytoolkit.common\\8.0.0\\communitytoolkit.common.8.0.0.nupkg.sha512",
     "C:\\Users\\pgago\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
