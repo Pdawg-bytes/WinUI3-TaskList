@@ -4,7 +4,6 @@ using System;
 using System.Diagnostics;
 using Microsoft.UI.Xaml.Controls;
 using Task_Lisk_App.ViewModels;
-
 namespace Task_Lisk_App.Views;
 
 public sealed partial class TasksPage : Page
@@ -24,7 +23,7 @@ public sealed partial class TasksPage : Page
     // Event handler for "Edit" button on Task page
     private void EditTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        
+        // I need to work on this later :)
     }
 
     // Event handler for "Add" button on Task page
@@ -38,13 +37,13 @@ public sealed partial class TasksPage : Page
         // Stores result for use in statement
         var result = await dialog.ShowAsync();
         
-        // Statement to manage state detection
+        // Statement to manage state detection and string handler
         if (result == ContentDialogResult.Primary)
         {
             SuccessBar.IsOpen = true;
-            string poctext = (string)dialog.Tag;
-            pocText.Text = poctext;
+            string addNewTask = (string)dialog.Tag;
             CancelBar.IsOpen = false;
+            TestView.Items.Add(addNewTask);
             // Waits 3 seconds then hides bar again
             await Task.Delay(TimeSpan.FromSeconds(3));
             SuccessBar.IsOpen = false;
@@ -56,6 +55,17 @@ public sealed partial class TasksPage : Page
             // Waits 3 seconds then hides bar again
             await Task.Delay(TimeSpan.FromSeconds(3));
             CancelBar.IsOpen = false;
+        }
+    }
+
+    // Handles removal of items in the List.
+    private void TestView_SelectionChanged(object sender, SelectionChangedEventArgs e) // Event handler
+    {
+        // Looking at if the list is anything more than 0 items, they can be removed
+        while (TestView.SelectedIndex > -1)
+        {
+            // Function to remove items
+            TestView.Items.RemoveAt(TestView.SelectedIndex);
         }
     }
 }

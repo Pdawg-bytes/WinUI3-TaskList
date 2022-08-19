@@ -5,10 +5,14 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -48,23 +52,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pgago\\.nuget\\packages\\": {},
+    "C:\\Users\\Pdawg\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pgago\\source\\repos\\Task List App\\Task Lisk App.Core\\Task Lisk App.Core.csproj",
+      "projectUniqueName": "D:\\Source\\Working\\Task Lisk App.Core\\Task Lisk App.Core.csproj",
       "projectName": "Task Lisk App.Core",
-      "projectPath": "C:\\Users\\pgago\\source\\repos\\Task List App\\Task Lisk App.Core\\Task Lisk App.Core.csproj",
-      "packagesPath": "C:\\Users\\pgago\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pgago\\source\\repos\\Task List App\\Task Lisk App.Core\\obj\\",
+      "projectPath": "D:\\Source\\Working\\Task Lisk App.Core\\Task Lisk App.Core.csproj",
+      "packagesPath": "C:\\Users\\Pdawg\\.nuget\\packages\\",
+      "outputPath": "D:\\Source\\Working\\Task Lisk App.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\pgago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pdawg\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -73,7 +77,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "http://packages.nuget.org/v1/FeedService.svc/": {}
       },
       "frameworks": {
         "net6.0": {
@@ -102,7 +106,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -111,8 +116,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://packages.nuget.org/v1/FeedService.svc/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
 }
