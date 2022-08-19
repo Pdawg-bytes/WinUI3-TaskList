@@ -9,4 +9,5 @@ Download the source code from a .ZIP, or use git to clone this repo. Then, use V
 Main Page task list
 
 ![image](https://user-images.githubusercontent.com/83825746/185719380-3189c392-5258-46f8-a460-90aee3b8c84e.png)
+
 Create task dialog
