@@ -21,9 +21,33 @@ public sealed partial class TasksPage : Page
     }
 
     // Event handler for "Edit" button on Task page
-    private void EditTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
+    private async void EditTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
-        // I need to work on this later :)
+        ContentDialog dialog = new CreateTaskDialog();
+        dialog.CloseButtonStyle = (Style)Application.Current.Resources["ButtonStyle1"];
+        dialog.XamlRoot = this.XamlRoot;
+
+        var result = await dialog.ShowAsync();
+
+        if (result == ContentDialogResult.Primary)
+        {
+            SuccessBar.IsOpen = true;
+            string addNewTask = (string)dialog.Tag;
+            CancelBar.IsOpen = false;
+            
+            TestView.Items[TestView.SelectedIndex] = addNewTask;
+
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            SuccessBar.IsOpen = false;
+        }
+        else
+        {
+            CancelBar.IsOpen = true;
+            SuccessBar.IsOpen = false;
+            // Waits 3 seconds then hides bar again
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            CancelBar.IsOpen = false;
+        }
     }
 
     // Event handler for "Add" button on Task page
@@ -36,7 +60,7 @@ public sealed partial class TasksPage : Page
 
         // Stores result for use in statement
         var result = await dialog.ShowAsync();
-        
+
         // Statement to manage state detection and string handler
         if (result == ContentDialogResult.Primary)
         {
@@ -59,7 +83,7 @@ public sealed partial class TasksPage : Page
     }
 
     // Handles removal of items in the List.
-    private void TestView_SelectionChanged(object sender, SelectionChangedEventArgs e) // Event handler
+    private void RemoveTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e) // Event handler
     {
         // Looking at if the list is anything more than 0 items, they can be removed
         while (TestView.SelectedIndex > -1)
