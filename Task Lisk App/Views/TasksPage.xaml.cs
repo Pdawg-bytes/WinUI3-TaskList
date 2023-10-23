@@ -23,6 +23,7 @@ public sealed partial class TasksPage : Page
     // Event handler for "Edit" button on Task page
     private async void EditTask_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
+        //Need to consider when multiple tasks are selected
         ContentDialog dialog = new CreateTaskDialog();
         dialog.CloseButtonStyle = (Style)Application.Current.Resources["ButtonStyle1"];
         dialog.XamlRoot = this.XamlRoot;

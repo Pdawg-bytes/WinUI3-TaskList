@@ -17,6 +17,6 @@
 			<TextBlock x:Name="pocText" Margin="20,14,0,0"/>
 		</StackPanel>
 
-		<ListView x:Name="TestView" SelectionMode="Single" ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="0,80,0,0"/>
+		<ListView x:Name="TestView" SelectionMode="Multiple" ScrollViewer.HorizontalScrollMode="Enabled" ScrollViewer.HorizontalScrollBarVisibility="Auto" Margin="0,80,0,0"/>
 	</Grid>
 </Page>
